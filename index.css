@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0b;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(140, 28, 40, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(140, 28, 40, 0.10), transparent 50%);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Sora", sans-serif;
+}
+
+.glass {
+  background: rgba(18, 18, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 1rem;
+}
+
+.glass-strong {
+  background: rgba(18, 18, 20, 0.85);
+  border: 1px solid rgba(140, 28, 40, 0.25);
+  backdrop-filter: blur(18px);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4f0f17;
+  border-radius: 4px;
+}
